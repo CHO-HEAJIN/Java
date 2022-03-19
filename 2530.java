@@ -23,18 +23,17 @@ public class Num2530 {
 		
 		if (h > 24) {
 			H = h % 24;
-			H = H % 24;
 			System.out.println( H + " " + m + " "+ input);		
-			
-			} else {
-				if (h == 24) {
-					H = 0; 
-					System.out.println( H + " " + m + " "+ input );
-					} 
-				else {
-					System.out.println( h + " " + m + " "+ input );
-					}
-				}
+			} 
+		else {
+			if (h == 24) {
+				H = 0; 
+				System.out.println( H + " " + m + " "+ input );
+			} 
+			else {
+				System.out.println( h + " " + m + " "+ input );
+			}
+		}
 			
 	}
 
