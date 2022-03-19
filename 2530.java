@@ -7,7 +7,6 @@ public class Num2530 {
 		
 		int H = s.nextInt(); //시
 		int h ;
-		int i;
 		int M = s.nextInt(); //분
 		int m;
 		int n;
@@ -25,27 +24,18 @@ public class Num2530 {
 		if (h > 24) {
 			H = h % 24;
 			H = H % 24;
-			i = H;
-			if (i == 24) {
-				i = 0; 
-				System.out.println( i + " " + m + " "+ input );
-				}
-			else { 
-				System.out.println( i + " " + m + " "+ input);
-			}
+			System.out.println( H + " " + m + " "+ input);		
 			
-			}
-		else {
-			if (h == 24) {
-			i = 0; 
-			System.out.println( i + " " + m + " "+ input );
 			} else {
-				System.out.println( h + " " + m + " "+ input );
-			}
-
-		}
-		
-		
+				if (h == 24) {
+					H = 0; 
+					System.out.println( H + " " + m + " "+ input );
+					} 
+				else {
+					System.out.println( h + " " + m + " "+ input );
+					}
+				}
+			
 	}
 
 }
