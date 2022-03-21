@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Quiz2 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		int N = 0;
+		
+		N = s.nextInt();
+		
+		for (int i = 1; i < 10; i++) {
+			for (int j = 0; j < 1; j++) {
+				System.out.println(N + " * " + i + " = " + N*i);
+			}
+		}
+		
+		s.close();
+
+	}
+
+}
